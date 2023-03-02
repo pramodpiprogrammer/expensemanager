@@ -4,8 +4,8 @@ import "./Displaydate.css";
 
 const Displaydate = (props) => {
     
-    let day=props.ddate.toLocaleString('hi-IN', { day: '2-digit' });
-    let month=props.ddate.toLocaleString('hi-IN', { month: 'long' });
+    let day=props.ddate.toLocaleString('EN-IN', { day: '2-digit' });
+    let month=props.ddate.toLocaleString('EN-IN', { month: 'long' });
 
     // console.log(day);
     let year=props.ddate.getFullYear();

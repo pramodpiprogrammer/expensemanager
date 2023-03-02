@@ -7,9 +7,9 @@ const Chart = (props) => {
 
 
     const amountArray=props.chartData.map((amount)=>amount.value)
-    console.log(amountArray);
+    // console.log(amountArray);
     const maxAmount=Math.max(...amountArray);
-    console.log(maxAmount);
+    // console.log(maxAmount);
 
     return (
         <div className='chart'>

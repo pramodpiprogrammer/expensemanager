@@ -33,7 +33,7 @@ const ExpenseChart = (props) => {
         chartData[month].value+=objectofarray.amount;
     }
 
-    console.log(chartData)
+    // console.log(chartData)
 
     return (
         <div className='expensechart'>

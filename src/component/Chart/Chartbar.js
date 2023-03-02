@@ -12,7 +12,7 @@ const Chartbar = (props) => {
 
 
 
-    console.log(percentAmount);
+    // console.log(percentAmount);
 
 
     return (

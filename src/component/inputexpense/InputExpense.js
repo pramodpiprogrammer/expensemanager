@@ -26,7 +26,9 @@ const InputExpense = (props) => {
    
     setnewexpense({
       ...newexpense,
-      setamount: parseInt(event.target.value),
+      // setamount: parseInt(event.target.value),
+      setamount: event.target.value,
+
     });
   };
   const ondatechange = (event) => {
@@ -42,23 +44,28 @@ const InputExpense = (props) => {
   function liftingState(e) {
     e.preventDefault();
 
-
+    if(newexpense.settitle.trim().length=== 0 ||
+     newexpense.setdate.trim().length=== 0 ||
+     newexpense.setamount.trim().length=== 0){
+      alert("Please enter all data fields")
+      return;
+     }
 
     let newexpensedata = {
       date: new Date(newexpense.setdate),
       title: newexpense.settitle,
-      amount: newexpense.setamount,
+      amount:parseInt( newexpense.setamount),
 
       id: Math.random().toString(),
     };
 
     props.getData(newexpensedata);
 
-    // setnewexpense({
-    //   settitle: "",
-    //   setamount: "",
-    //   setdate: "",
-    // });
+    setnewexpense({
+      settitle: "",
+      setamount: "",
+      setdate: "",
+    });
 
 
   }
