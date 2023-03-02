@@ -1,0 +1,23 @@
+.chartbar{
+    margin: 20px;
+    /* border: 2px solid; */
+}
+
+.outerbar{
+    /* border: 2px solid; */
+    height: 100px;
+    margin-bottom: 10px;
+    width: 12px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+.innerbar{
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    transition: all 2s;
+}

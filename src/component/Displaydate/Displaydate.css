@@ -1,0 +1,32 @@
+#date{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(247, 199, 167);
+    margin-left: 0%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#day{
+    background-color: blanchedalmond;
+    border-radius: 100%;
+    /* border: 2px solid black; */
+    padding: 10px;
+    font-size: 4rem;;
+    font-weight: 1000;
+    margin: auto;
+}
+
+#month {
+    padding: 10px;
+    font-size: larger;
+    font-weight: 700;
+    margin: auto;
+}
+#year{
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
